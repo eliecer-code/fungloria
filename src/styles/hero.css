@@ -12,7 +12,7 @@
 .hero-content {
   max-width: 750px;
   z-index: 10;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
@@ -59,11 +59,11 @@
   .hero {
     background: linear-gradient(rgba(0, 40, 25, 0.8), rgba(0, 40, 25, 0.7)), url('../assets/images/hero.jpg') center 25% / cover no-repeat;
   }
-  
+
   .hero-title {
     font-size: 2.8rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
   }

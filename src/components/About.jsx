@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutImg from '../assets/images/quienessomos_1.png';
 import '../styles/sections.css';
 
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-image" data-aos="fade-right">
             <img 
-              src="src\assets\images\quienessomos_1.png" 
+              src={aboutImg} 
               alt="Equipo de profesionales de FUNGLORIA trabajando con la comunidad" 
             />
           </div>
