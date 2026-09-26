@@ -1,9 +1,14 @@
 import React from 'react';
+import heroImg from '../assets/images/hero.jpg';
 import '../styles/hero.css';
 
 const Hero = () => {
   return (
     <section id="inicio" className="hero">
+      <div className="hero-bg">
+        <img src={heroImg} alt="Hero background" fetchPriority="high" loading="eager" />
+        <div className="hero-overlay"></div>
+      </div>
       <div className="container">
         <div className="hero-content animate-fade-in">
           <h1 className="hero-title">
