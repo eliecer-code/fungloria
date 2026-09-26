@@ -78,6 +78,13 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem auto;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mv-card:hover .mv-icon {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.15) rotate(5deg);
 }
 
 .mv-card h3 {
@@ -173,6 +180,15 @@
   padding-bottom: 1rem;
 }
 
+.service-category h3 svg {
+  transition: all 0.4s ease;
+}
+
+.service-category:hover h3 svg {
+  transform: scale(1.2) translateY(-3px);
+  color: var(--accent);
+}
+
 .service-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -184,12 +200,24 @@
   align-items: flex-start;
   gap: 0.8rem;
   color: var(--text-secondary);
+  transition: transform 0.2s ease;
+}
+
+.service-item:hover {
+  transform: translateX(5px);
+  color: var(--primary);
 }
 
 .service-item-icon {
   color: var(--primary-light);
   margin-top: 0.2rem;
   flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover .service-item-icon {
+  color: var(--primary);
+  transform: scale(1.2);
 }
 
 /* Action Lines Section */
@@ -218,6 +246,15 @@
 .action-card:hover {
   border-left-color: var(--accent);
   transform: translateX(5px);
+}
+
+.action-card svg {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.action-card:hover svg {
+  transform: scale(1.25) rotate(-10deg);
+  color: var(--accent);
 }
 
 .action-card h4 {
@@ -270,9 +307,18 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
+.oh-circle svg {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .oh-circle:hover {
   transform: scale(1.05);
   background: rgba(255, 255, 255, 0.2);
+}
+
+.oh-circle:hover svg {
+  transform: scale(1.2) translateY(-5px);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
 }
 
 .oh-circle span {
@@ -454,6 +500,13 @@
   background: var(--green-soft);
   padding: 0.8rem;
   border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-item:hover .contact-icon {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.1) rotate(-10deg);
 }
 
 .contact-item h4 {
