@@ -1,4 +1,5 @@
 import React from 'react';
+import { Users, PawPrint, Sprout } from 'lucide-react';
 import '../styles/sections.css';
 
 const OneHealth = () => {
@@ -14,15 +15,15 @@ const OneHealth = () => {
         
         <div className="oh-circles">
           <div className="oh-circle" data-aos="zoom-in" data-aos-delay="0">
-            <span style={{fontSize: '2rem'}}>🧑‍🤝‍🧑</span>
+            <Users size={48} strokeWidth={1.5} />
             <span>Salud Humana</span>
           </div>
           <div className="oh-circle" data-aos="zoom-in" data-aos-delay="150">
-            <span style={{fontSize: '2rem'}}>🐾</span>
+            <PawPrint size={48} strokeWidth={1.5} />
             <span>Salud Animal</span>
           </div>
           <div className="oh-circle" data-aos="zoom-in" data-aos-delay="300">
-            <span style={{fontSize: '2rem'}}>🌱</span>
+            <Sprout size={48} strokeWidth={1.5} />
             <span>Salud Ambiental</span>
           </div>
         </div>

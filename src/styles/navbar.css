@@ -105,15 +105,24 @@
     padding: 2rem 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: left 0.3s ease;
-    gap: 1.5rem;
+    gap: 0; /* Remove gap in favor of padding */
   }
 
   .nav-link {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    text-align: center;
     color: var(--text) !important;
   }
   
   .nav-link:hover {
     color: var(--primary) !important;
+    background-color: rgba(0, 107, 79, 0.05); /* Optional: slight background on tap/hover */
+  }
+
+  .nav-link::after {
+    display: none;
   }
 
   .navbar-links.active {

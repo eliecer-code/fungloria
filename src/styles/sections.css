@@ -494,6 +494,11 @@
   border-radius: 8px;
   font-family: inherit;
   transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.form-group textarea {
+  resize: vertical; /* Solo permite cambiar la altura, no el ancho */
 }
 
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
